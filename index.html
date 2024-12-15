@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="eslito.css">
+    <title>API DE CEP</title>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="form">
+            <label for="cep">CEP: </label>
+            <input type="text" id="cep" name="numeroCep" placeholder="Digite CEP" maxlength="8">
+            <button onclick="consultarCEP()">Buscar</button>
+        </div>
+
+        <div class="container_resultado" id="container_resultado">
+
+        </div>
+        <script src="CepApi.js"></script>
+    </main>
+</body>
+
+</html>
