@@ -23,8 +23,8 @@ body {
     gap: 12px;
 }
 
-.container .form {
-    margin: 6rem 0;
+.form h2 {
+    margin-bottom: 3rem;
 }
 
 input {
@@ -55,7 +55,10 @@ button:hover {
     border-radius: 8px;
     max-width: 400px;
     text-align: justify;
-    height: 16.5rem;
+}
+
+.container_resultado p {
+    margin: 5px;
 }
 
 .erro {

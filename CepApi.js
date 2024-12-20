@@ -1,5 +1,9 @@
+function formatarCEP(input) {
+    input.value = input.value.replace(/\D/g, '').replace(/(\d{5})(\d)/, '$1-$2').substr(0, 9);
+}
+
 async function consultarCEP() {
-    const cep = document.getElementById('cep').value.trim();
+    const cep = document.getElementById('cep').value.trim().replace("-","");
     const resultado = document.getElementById('container_resultado');
 
     // Limpar conteúdo anterior

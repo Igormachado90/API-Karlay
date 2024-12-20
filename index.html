@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://uploads-ssl.webflow.com/64b1188870b9cd399d5c74bc/64b199cf067cf5ebe176d952_API.png" type="image/x-icon">
     <link rel="stylesheet" href="eslito.css">
     <title>API DE CEP</title>
 </head>
 
 <body>
+    <h1>Localizador de Pontos de Interesse por CEP de APIs</h1>
     <main class="container">
-
         <div class="form">
+            <h2>Consulta CEP</h2>
             <label for="cep">CEP: </label>
-            <input type="text" id="cep" name="numeroCep" placeholder="Digite CEP" maxlength="8">
+            <input type="text" id="cep" name="numeroCep" placeholder="Digite CEP" maxlength="9" oninput="formatarCEP(this)">
             <button onclick="consultarCEP()">Buscar</button>
         </div>
 
-        <div class="container_resultado" id="container_resultado">
-
-        </div>
+        <div class="container_resultado" id="container_resultado"></div>
         <script src="CepApi.js"></script>
     </main>
 </body>
